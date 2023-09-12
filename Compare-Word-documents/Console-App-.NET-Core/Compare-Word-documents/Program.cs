@@ -21,7 +21,7 @@ namespace Compare_Word_documents
                         //Load the revised Word document.
                         using (WordDocument revisedDocument = new WordDocument(revisedDocumentFileStream, FormatType.Docx))
                         {
-                            //Compares the original document with revised document
+                            //Compare the original document with revised document
                             originalDocument.Compare(revisedDocument, "Nancy Davolio", DateTime.Now.AddDays(-1));
                             //Create the output file stream.
                             using (FileStream fileStreamOutput = File.Create(Path.GetFullPath(@"../../../Output.docx")))

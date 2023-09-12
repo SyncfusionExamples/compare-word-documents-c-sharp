@@ -12,18 +12,19 @@ namespace Ignore_format_changes
             //Open the file as Stream. 
             using (FileStream originalDocumentFileStream = new FileStream(Path.GetFullPath(@"../../../Data/OriginalDocument.docx"), FileMode.Open))
             {
-                //Loads the original Word document.
+                //Load the original Word document.
                 using (WordDocument originalDocument = new WordDocument(originalDocumentFileStream, FormatType.Docx))
                 {
                     //Open the file as Stream. 
                     using (FileStream revisedDocumentFileStream = new FileStream(Path.GetFullPath(@"../../../Data/RevisedDocument.docx"), FileMode.Open))
                     {
-                        //Loads the revised Word document.
+                        //Load the revised Word document.
                         using (WordDocument revisedDocument = new WordDocument(revisedDocumentFileStream, FormatType.Docx))
                         {
                             //Disable the flag to ignore the formatting changes while comparing the documents
                             ComparisonOptions comparisonOptions = new ComparisonOptions();
                             comparisonOptions.DetectFormatChanges = false;
+                            //Compare the original document with revised document
                             originalDocument.Compare(revisedDocument, "Nancy Davolio", DateTime.Now.AddDays(-1), comparisonOptions);
                             //Create the output file stream.
                             using (FileStream fileStreamOutput = File.Create(Path.GetFullPath(@"../../../Output.docx")))
