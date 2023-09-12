@@ -13,7 +13,7 @@ This repository contains examples that illustrates how to compare two DOCX forma
 ## Resources
 
 - **Product page:** [Syncfusion Word Framework](https://www.syncfusion.com/document-processing/word-framework/net?utm_source=github&utm_medium=listing&utm_campaign=compare-word-documents-examples)
-- **Documentation:** [Convert Word to image using Syncfusion Word library](https://help.syncfusion.com/file-formats/docio/word-to-image)
+- **Documentation:** [Compare Word documents using Syncfusion Word library](https://help.syncfusion.com/file-formats/docio/compare-word-documents)
 - **GitHub Examples:** [Syncfusion Word library examples](https://github.com/SyncfusionExamples/DocIO-Examples)
 - **Online demo:** [Syncfusion Word library - Online demos](https://ej2.syncfusion.com/aspnetcore/DocIO/SalesInvoice)
 
