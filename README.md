@@ -2,10 +2,6 @@
 
 This repository contains examples that illustrates how to compare two DOCX format documents and highlight the changes, such as insertions, deletions, and formatting, as tracked changes programmatically in C#. The Syncfusion [.NET&nbsp;Word library](https://www.syncfusion.com/document-processing/word-framework/net/word-library?utm_source=github&utm_medium=listing&utm_campaign=compare-word-documents-examples) (DocIO) compares two Word documents with just few lines of code and also it does not require Microsoft Word application to be installed in the machine.
 
-## Screenshots
-
-**Compare Word documents**
-
 <p align="center"> 
 <img src="Images/Compare-Word-documents.png" alt="Compare Word documents in C#"/> 
 </p>
